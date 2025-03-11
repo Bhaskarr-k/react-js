@@ -30,4 +30,14 @@ function Import1(){
     )
 }
 
-export {Import1}
+function Import2(){
+    return(
+        <div>
+            <h3>Header</h3>
+            <h3>Footer</h3>
+            <h3>SideBar</h3>
+        </div>
+    )
+}
+
+export {Import1,Import2}
