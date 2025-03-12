@@ -1,0 +1,10 @@
+.header-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.header:hover{
+    color: red;
+    border: 5px lightgreen;
+}

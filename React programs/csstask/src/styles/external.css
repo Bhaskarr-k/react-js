@@ -1,0 +1,19 @@
+.header-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+    color: blue;
+    justify-content: space-around;
+
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    /* justify-content: center; */
+    gap: 15px;
+
+}

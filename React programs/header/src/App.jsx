@@ -1,6 +1,6 @@
 
 // import React from "react"
-
+import {  } from "module";
 
 // function App(){
 //   const li1=React.createElement("li",null,"Front end development");
@@ -12,19 +12,19 @@
 // export default App
 
 
-import React from "react";
+// import React from "react";
 
 
-function App(){
-  return(
-    <ul>
-      <h3>Front end Development</h3>
-      <h3>Backend end Development</h3>
-    </ul>
-  )
-}
+// function App(){
+//   return(
+//     <ul>
+//       <h3>Front end Development</h3>
+//       <h3>Backend end Development</h3>
+//     </ul>
+//   )
+// }
 
-export {App}
+// export {App}
 
 
 
