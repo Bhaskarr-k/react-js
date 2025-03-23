@@ -17,10 +17,11 @@ function Counter() {
 
     return (
         <>
-            <div>
+            <div className="d-flex">
                 <h1>{count}</h1>
                 <button onClick={increment}>Increment</button>
                 <br />
+                <h2>Bhaskar</h2>
                
                 <button onClick={decrement}>Decrement</button>
             </div>
