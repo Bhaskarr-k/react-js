@@ -1,15 +1,15 @@
 import React from "react";
 import { Counter } from "./Counter";
-import { Student } from "./Student";
+
 import Login from "./Login";
+import Signup from "./Signup";
 
 
 function App(){
   return(
     <>
-     {/* <Counter/> */}
-     <Student/>
-     {/* <Login/> */}
+     
+     <Signup/>
    
     </>
   )
