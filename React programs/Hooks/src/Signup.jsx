@@ -8,7 +8,8 @@ export default function Signup() {
         username:"",
         password:"",
         cpassword:"",
-        email:""
+        email:"",
+        mp:""
     })
     // state variable to store errors in the form of object
     const [formerrors, setFormError]=useState({});
@@ -24,7 +25,8 @@ export default function Signup() {
     const regex={
         un:/^[A-Z][a-z]{3,8}$/,
         pw:/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{6,16}$/,
-        em:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+        em:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        mp:/^[6-9]\d{9}$/
     }
     //  validation function
     function validate(){
@@ -37,7 +39,9 @@ export default function Signup() {
             erors.cpassword="confirm password is not matched to the password"
         if(!regex.em.test(formData.email))
             erors.email="mail should be all uppercase latters with include one special charecter and digits"
-        return erors
+       if(!regex.mp.test(formData.mp))
+            erors.mp="numbers should be in under 10 only"
+       return erors
 
     }
 
@@ -79,6 +83,7 @@ export default function Signup() {
                 <label for="mobileno">mobileno</label>
                 <input type="mobileno" name="mobileno" id="mobileno" placeholder="" onChange={handleChange}/>
             </div>
+            <p>{formerrors.mp}</p>
             <div class="forgot">
                     <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
             </div>
