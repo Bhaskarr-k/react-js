@@ -5,6 +5,7 @@
     background-color: rgba(17, 24, 39, 1);
     padding: 2rem;
     color: rgba(243, 244, 246, 1);
+    margin-left: 450px;
   }
   
   .title {
@@ -16,6 +17,8 @@
   
   .form {
     margin-top: 1.5rem;
+    margin-right: 10px;
+   
   }
   
   .input-group {
